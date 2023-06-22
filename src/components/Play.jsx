@@ -72,9 +72,6 @@ const Play = () => {
       setBowlCount((pre) => pre + 1);
       setOverRun(tempOverRun);
     }
-    if (over === 2) {
-      alert('Innings is over');
-    }
   };
 
   const newMatch = () => {

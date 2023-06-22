@@ -64,7 +64,7 @@ const AllMatches = () => {
           (_, index) => (
             <button
               key={index + 1}
-              className={`mx-2 px-2 py-1 rounded ${
+              className={`mx-2 px-3 py-1 rounded ${
                 currentPage === index + 1
                   ? 'bg-gray-500 text-white'
                   : 'bg-gray-200'

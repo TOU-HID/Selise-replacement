@@ -31,7 +31,7 @@ const MatchDetail = () => {
         <>
           <div className='flex flex-col justify-center items-center'>
             <div className='text-4xl font-bold text-gray-950 text-center'>
-              Lets Play Cricket
+              Match Details
             </div>
             <div className='text-gray-950 text-center'>
               <span className='text-lg font-bold mr-2'>

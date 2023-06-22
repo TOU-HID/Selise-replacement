@@ -28,7 +28,7 @@ const SelectTeams = ({ countries }) => {
   }, []);
 
   const selectTeam = (team) => {
-    if (count <= 2) {
+    if (selectedCountries.length <= 1) {
       axios
         .post('http://localhost:4000/selectedTeams', team)
         .then(function (response) {
@@ -39,6 +39,8 @@ const SelectTeams = ({ countries }) => {
         .catch(function (error) {
           console.log(error);
         });
+    } else {
+      alert("Your can't select more than two countries");
     }
   };
 
@@ -68,7 +70,7 @@ const SelectTeams = ({ countries }) => {
           >
             {selectedCountries.includes(country.name) ? (
               <div
-                className='absolute -top-1 right-1 font-bold cursor-pointer'
+                className='absolute -top-1 right-2 font-bold cursor-pointer'
                 onClick={() => deleteMatch(country)}
               >
                 x
@@ -86,7 +88,7 @@ const SelectTeams = ({ countries }) => {
       <div className='flex justify-center mt-4'>
         {count === 2 ? (
           <Link to='/toss'>
-            <button className='text-white font-bold bg-gray-800 p-2 rounded-md'>
+            <button className='text-white font-bold bg-gray-800 p-2 rounded-md w-44'>
               Toss
             </button>
           </Link>
