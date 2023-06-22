@@ -48,6 +48,9 @@ const MatchDetail = () => {
               </span>{' '}
               has won the toss and elected to bowl first
             </div>
+            <div className='text-center text-white bg-gray-500 rounded px-2'>
+              {matche?.winner} is the winner
+            </div>
             <div>
               Total run: {matche?.bowlingTeamRun + matche?.batingTeamRun}
             </div>
