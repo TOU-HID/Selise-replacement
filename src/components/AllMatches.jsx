@@ -20,7 +20,7 @@ const AllMatches = () => {
     axios
       .get('http://localhost:4000/matches')
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         setMatches(response.data);
       })
       .catch(function (error) {
@@ -48,6 +48,9 @@ const AllMatches = () => {
     <div>
       <Header />
       <div className='flex flex-col justify-center items-center gap-3 mt-5'>
+        <div className='text-4xl font-bold text-gray-950 text-center'>
+          All match list
+        </div>
         {currentMatches.map((match, i) => (
           <div
             key={i}

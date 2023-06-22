@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 const SelectTeams = ({ countries }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
   const [count, setCount] = useState(0);
-  const [toss, setToss] = useState(false);
-  console.log(selectedCountries);
 
   const getSelectedCountries = () => {
     axios
@@ -48,7 +46,7 @@ const SelectTeams = ({ countries }) => {
     axios
       .delete(`http://localhost:4000/selectedTeams/${country.id}`)
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         getSelectedCountries();
       })
       .catch(function (error) {

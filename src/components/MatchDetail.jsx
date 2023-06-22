@@ -12,7 +12,7 @@ const MatchDetail = () => {
     axios
       .get(`http://localhost:4000/matches/${id}`)
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         setMatche(response.data);
       })
       .catch(function (error) {

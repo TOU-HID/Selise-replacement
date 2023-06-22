@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from './Header';
 
 const Play = () => {
@@ -20,7 +20,7 @@ const Play = () => {
     axios
       .get('http://localhost:4000/selectedTeams')
       .then(function (response) {
-        console.log('response', response);
+        // console.log('response', response);
         setSelectedCountries(response.data);
         const bowlingTeam = response.data.find((item) => item.id == id);
         setBowlingTeam(bowlingTeam);
@@ -65,8 +65,6 @@ const Play = () => {
       setBowlCount(0);
     }
     if (over < 2) {
-      console.log('over', over);
-      console.log('bowlCount', bowlCount);
       const name = over === 0 ? batingTeam?.name : bowlingTeam?.name;
       const tempOverRun = [...overRun, { over, bowlCount, run, name }];
       setBowlCount((pre) => pre + 1);
@@ -79,7 +77,7 @@ const Play = () => {
       axios
         .delete(`http://localhost:4000/selectedTeams/${item.id}`)
         .then(function (response) {
-          console.log(response);
+          // console.log(response);
         })
         .catch(function (error) {
           console.log(error);
@@ -103,7 +101,7 @@ const Play = () => {
     axios
       .post('http://localhost:4000/matches', data)
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         navigate('/');
       })
       .catch(function (error) {
