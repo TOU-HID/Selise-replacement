@@ -18,7 +18,7 @@ const Play = () => {
 
   const getSelectedCountries = () => {
     axios
-      .get('http://localhost:4000/selectedTeams')
+      .get('https://server-selise-test.onrender.com/selectedTeams')
       .then(function (response) {
         // console.log('response', response);
         setSelectedCountries(response.data);
@@ -75,7 +75,9 @@ const Play = () => {
   const newMatch = () => {
     selectedCountries.map((item) =>
       axios
-        .delete(`http://localhost:4000/selectedTeams/${item.id}`)
+        .delete(
+          `https://server-selise-test.onrender.com/selectedTeams/${item.id}`
+        )
         .then(function (response) {
           // console.log(response);
         })
@@ -99,7 +101,7 @@ const Play = () => {
       winner: winTeam,
     };
     axios
-      .post('http://localhost:4000/matches', data)
+      .post('https://server-selise-test.onrender.com/matches', data)
       .then(function (response) {
         // console.log(response);
         navigate('/');

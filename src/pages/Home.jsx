@@ -8,7 +8,7 @@ const Home = () => {
 
   const getCountries = () => {
     axios
-      .get('http://localhost:4000/countries')
+      .get('https://server-selise-test.onrender.com/countries')
       .then(function (response) {
         // console.log(response);
         setCountries(response.data);

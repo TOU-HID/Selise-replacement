@@ -10,7 +10,7 @@ const MatchDetail = () => {
   console.log(matche);
   const getMatchesById = () => {
     axios
-      .get(`http://localhost:4000/matches/${id}`)
+      .get(`https://server-selise-test.onrender.com/matches/${id}`)
       .then(function (response) {
         // console.log(response);
         setMatche(response.data);

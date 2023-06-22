@@ -8,7 +8,7 @@ const SelectTeams = ({ countries }) => {
 
   const getSelectedCountries = () => {
     axios
-      .get('http://localhost:4000/selectedTeams')
+      .get('https://server-selise-test.onrender.com/selectedTeams')
       .then(function (response) {
         // console.log(response);
         const countriesName = response.data.map((item) => item.name);
@@ -28,7 +28,7 @@ const SelectTeams = ({ countries }) => {
   const selectTeam = (team) => {
     if (selectedCountries.length <= 1) {
       axios
-        .post('http://localhost:4000/selectedTeams', team)
+        .post('https://server-selise-test.onrender.com/selectedTeams', team)
         .then(function (response) {
           // console.log(response);
           setCount((pre) => pre + 1);
@@ -44,7 +44,9 @@ const SelectTeams = ({ countries }) => {
 
   const deleteMatch = (country) => {
     axios
-      .delete(`http://localhost:4000/selectedTeams/${country.id}`)
+      .delete(
+        `https://server-selise-test.onrender.com/selectedTeams/${country.id}`
+      )
       .then(function (response) {
         // console.log(response);
         getSelectedCountries();

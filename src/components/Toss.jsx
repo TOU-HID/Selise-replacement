@@ -9,7 +9,7 @@ const Toss = () => {
 
   const getSelectedCountries = () => {
     axios
-      .get('http://localhost:4000/selectedTeams')
+      .get('https://server-selise-test.onrender.com/selectedTeams')
       .then(function (response) {
         console.log(response);
         setSelectedCountries(response.data);
@@ -37,7 +37,7 @@ const Toss = () => {
         </div>
         <div className='flex flex-row'>
           {selectedCountries.map((country, i) => (
-            <div className='flex flex-row justify-center items-center'>
+            <div key={i} className='flex flex-row justify-center items-center'>
               <img
                 src={country.img}
                 alt='country'

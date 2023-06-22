@@ -18,7 +18,7 @@ const AllMatches = () => {
 
   const getAllMatches = () => {
     axios
-      .get('http://localhost:4000/matches')
+      .get('https://server-selise-test.onrender.com/matches')
       .then(function (response) {
         // console.log(response);
         setMatches(response.data);
@@ -34,7 +34,7 @@ const AllMatches = () => {
 
   const deleteMatch = (match) => {
     axios
-      .delete(`http://localhost:4000/matches/${match.id}`)
+      .delete(`https://server-selise-test.onrender.com/matches/${match.id}`)
       .then(function (response) {
         console.log(response);
         getAllMatches();
