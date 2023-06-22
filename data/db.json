@@ -1,0 +1,425 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Sri Lanka",
+      "img": "https://www.countryflags.com/wp-content/uploads/sri-lanka-flag-png-large.png"
+    },
+    {
+      "id": 2,
+      "name": "India",
+      "img": "https://www.countryflags.com/wp-content/uploads/india-flag-png-large.png"
+    },
+    {
+      "id": 3,
+      "name": "Bangladesh",
+      "img": "https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-14-2048x1229.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Finland",
+      "img": "https://www.countryflags.com/wp-content/uploads/finland-flag-png-large.png"
+    },
+    {
+      "id": 5,
+      "name": "England",
+      "img": "https://www.countryflags.com/wp-content/uploads/england-flag-jpg-xl.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pakistan",
+      "img": "https://www.countryflags.com/wp-content/uploads/pakistan-flag-png-large.png"
+    }
+  ],
+  "selectedTeams": [],
+  "matches": [
+    {
+      "id": 0.0924362539524429,
+      "matchName": "India vs Sri Lanka",
+      "bowlingTeamRun": 16,
+      "batingTeamRun": 24,
+      "overRun": [
+        {
+          "over": 0,
+          "bowlCount": 0,
+          "run": 4,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 1,
+          "run": 1,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 2,
+          "run": 4,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 3,
+          "run": 2,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 4,
+          "run": 6,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 5,
+          "run": 1,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 0,
+          "bowlCount": 6,
+          "run": 6,
+          "name": "Sri Lanka"
+        },
+        {
+          "over": 1,
+          "bowlCount": 1,
+          "run": 4,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 2,
+          "run": 4,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 3,
+          "run": 1,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 4,
+          "run": 1,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 5,
+          "run": 4,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 6,
+          "run": 2,
+          "name": "India"
+        }
+      ],
+      "bowlingTeam": {
+        "id": 2,
+        "name": "India",
+        "img": "https://www.countryflags.com/wp-content/uploads/india-flag-png-large.png"
+      },
+      "batingTeam": {
+        "id": 1,
+        "name": "Sri Lanka",
+        "img": "https://www.countryflags.com/wp-content/uploads/sri-lanka-flag-png-large.png"
+      },
+      "winner": "Sri Lanka"
+    },
+    {
+      "id": 0.844580679173807,
+      "matchName": "Bangladesh vs Finland",
+      "bowlingTeamRun": 22,
+      "batingTeamRun": 25,
+      "overRun": [
+        {
+          "over": 0,
+          "bowlCount": 0,
+          "run": 4,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 1,
+          "run": 4,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 2,
+          "run": 3,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 3,
+          "run": 6,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 4,
+          "run": 6,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 5,
+          "run": 1,
+          "name": "Finland"
+        },
+        {
+          "over": 0,
+          "bowlCount": 6,
+          "run": 1,
+          "name": "Finland"
+        },
+        {
+          "over": 1,
+          "bowlCount": 1,
+          "run": 3,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 2,
+          "run": 6,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 3,
+          "run": 2,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 4,
+          "run": 6,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 5,
+          "run": 1,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 6,
+          "run": 4,
+          "name": "Bangladesh"
+        }
+      ],
+      "bowlingTeam": {
+        "id": 3,
+        "name": "Bangladesh",
+        "img": "https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-14-2048x1229.jpg"
+      },
+      "batingTeam": {
+        "id": 4,
+        "name": "Finland",
+        "img": "https://www.countryflags.com/wp-content/uploads/finland-flag-png-large.png"
+      },
+      "winner": "Finland"
+    },
+    {
+      "id": 0.193615901551963,
+      "matchName": "Pakistan vs England",
+      "bowlingTeamRun": 27,
+      "batingTeamRun": 19,
+      "overRun": [
+        {
+          "over": 0,
+          "bowlCount": 0,
+          "run": 1,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 1,
+          "run": 3,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 2,
+          "run": 2,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 3,
+          "run": 2,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 4,
+          "run": 6,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 5,
+          "run": 4,
+          "name": "England"
+        },
+        {
+          "over": 0,
+          "bowlCount": 6,
+          "run": 1,
+          "name": "England"
+        },
+        {
+          "over": 1,
+          "bowlCount": 1,
+          "run": 6,
+          "name": "Pakistan"
+        },
+        {
+          "over": 1,
+          "bowlCount": 2,
+          "run": 3,
+          "name": "Pakistan"
+        },
+        {
+          "over": 1,
+          "bowlCount": 3,
+          "run": 6,
+          "name": "Pakistan"
+        },
+        {
+          "over": 1,
+          "bowlCount": 4,
+          "run": 4,
+          "name": "Pakistan"
+        },
+        {
+          "over": 1,
+          "bowlCount": 5,
+          "run": 4,
+          "name": "Pakistan"
+        },
+        {
+          "over": 1,
+          "bowlCount": 6,
+          "run": 4,
+          "name": "Pakistan"
+        }
+      ],
+      "bowlingTeam": {
+        "id": 6,
+        "name": "Pakistan",
+        "img": "https://www.countryflags.com/wp-content/uploads/pakistan-flag-png-large.png"
+      },
+      "batingTeam": {
+        "id": 5,
+        "name": "England",
+        "img": "https://www.countryflags.com/wp-content/uploads/england-flag-jpg-xl.jpg"
+      },
+      "winner": "Pakistan"
+    },
+    {
+      "id": 0.1192692727365013,
+      "matchName": "India vs Bangladesh",
+      "bowlingTeamRun": 16,
+      "batingTeamRun": 13,
+      "overRun": [
+        {
+          "over": 0,
+          "bowlCount": 0,
+          "run": 3,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 1,
+          "run": 2,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 2,
+          "run": 2,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 3,
+          "run": 1,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 4,
+          "run": 1,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 5,
+          "run": 3,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 0,
+          "bowlCount": 6,
+          "run": 1,
+          "name": "Bangladesh"
+        },
+        {
+          "over": 1,
+          "bowlCount": 1,
+          "run": 2,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 2,
+          "run": 2,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 3,
+          "run": 2,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 4,
+          "run": 1,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 5,
+          "run": 3,
+          "name": "India"
+        },
+        {
+          "over": 1,
+          "bowlCount": 6,
+          "run": 6,
+          "name": "India"
+        }
+      ],
+      "bowlingTeam": {
+        "id": 2,
+        "name": "India",
+        "img": "https://www.countryflags.com/wp-content/uploads/india-flag-png-large.png"
+      },
+      "batingTeam": {
+        "id": 3,
+        "name": "Bangladesh",
+        "img": "https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-14-2048x1229.jpg"
+      },
+      "winner": "India"
+    }
+  ]
+}
