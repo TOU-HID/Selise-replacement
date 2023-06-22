@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from './Header';
-import Pagination from './Pagination';
 
 const AllMatches = () => {
   const [matches, setMatches] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const matchesPerPage = 3;
+
+  const indexOfLastMatch = currentPage * matchesPerPage;
+  const indexOfFirstMatch = indexOfLastMatch - matchesPerPage;
+  const currentMatches = matches.slice(indexOfFirstMatch, indexOfLastMatch);
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
   const getAllMatches = () => {
     axios
@@ -39,7 +48,7 @@ const AllMatches = () => {
     <div>
       <Header />
       <div className='flex flex-col justify-center items-center gap-3 mt-5'>
-        {matches.map((match, i) => (
+        {currentMatches.map((match, i) => (
           <div
             key={i}
             className='flex flex-row justify-center items-center text-white gap-5 bg-gray-500 p-2 rounded'
@@ -49,11 +58,23 @@ const AllMatches = () => {
           </div>
         ))}
       </div>
-      <div className='join flex justify-center items-center mt-5'>
-        <button className='join-item btn'>1</button>
-        <button className='join-item btn btn-active'>2</button>
-        <button className='join-item btn'>3</button>
-        <button className='join-item btn'>4</button>
+      <div className='flex mt-4 justify-center items-center'>
+        {Array.from(
+          { length: Math.ceil(matches.length / matchesPerPage) },
+          (_, index) => (
+            <button
+              key={index + 1}
+              className={`mx-2 px-2 py-1 rounded ${
+                currentPage === index + 1
+                  ? 'bg-gray-500 text-white'
+                  : 'bg-gray-200'
+              }`}
+              onClick={() => paginate(index + 1)}
+            >
+              {index + 1}
+            </button>
+          )
+        )}
       </div>
     </div>
   );
